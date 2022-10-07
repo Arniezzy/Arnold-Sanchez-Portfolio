@@ -1,21 +1,19 @@
 :root {
-    -- background:;
+    -- background: ;
     -- font: ;
 }
 
-* {
+body {
+    background-color: #b8b8b8;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body {
-    background-color: #2c2c2c;
-}
 /* Header */
 .header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(36, 0, 36);
     color: #ffffff;
 }
@@ -46,7 +44,7 @@ body {
     margin-left: 25px;
 }
 
-a {
+.header a {
     color: #ffffff;
     text-decoration: none;
 }
@@ -60,25 +58,76 @@ a {
     background-size: cover;
     background-position: center;
 }
+
 .hero-text {
     font-size: 20px;
-    text-align: end;
-    bottom: 75%;
-    left: 50%;
     color: rgb(255, 255, 50);
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    top: 25%;
+    left: 85%;
 }
 /* Hero END */
-.content {
+.body {
     display: flex;
     padding: 1%;
-    background-color: #ffffff;
     justify-content: space-between;
 }
-.content h2 {
-    padding: 5px;
-    border-right: 3px solid;
+
+.about-me {
+    margin: 20px;
+    padding: 0;
 }
-.content about-me p {
+
+.about-me img {
+    width: 200px;
+    float: left;
+    padding-right: 19px;
+}
+
+.about-me p {
     margin: 10px;
     padding: 5px;
+    font-size: 10px;
+}
+
+.work {
+    margin: 20px;
+    padding: 200px;
+}
+.work div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.box1 {
+    float: left;
+}
+
+.box1 img {
+    width: 15em;
+    height: 15em;
+}
+
+.images {
+    padding: 1em;
+    margin: 1em;
+}
+
+/* Footer */
+.contact-me {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.contact-me p {
+    display: inline;
+    flex-direction: row;
+}
+
+.contact-me a {
+    color: blueviolet;
 }
